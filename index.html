@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header start here  -->
+    <nav class="bg-[#ffcc00] border-gray-200  sticky w-full z-20 top-0 start-0">
+        <div class="container mx-auto px-5 py-5 lg:px-10 flex flex-wrap items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img/logo.png" class="w-[120px]" alt="Logo" />
+
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#363636] rounded-lg md:hidden"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <div class="hidden text-xs lg:flex items-center gap-x-1 justify-end mb-2">
+                    <a href="#" class="text-[#942642] hover:text-[#942642]">
+                        DE
+                    </a>
+                    <span class="text-[10px]">|</span>
+                    <a href="/" class="text-[#676767] hover:text-[#942642]">
+                        EN
+                    </a>
+                </div>
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Umzug
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                            class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Zusatzleistungen
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar2"
+                            class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3"
+                            class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Ratgeber<svg
+                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar3"
+                            class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4"
+                            class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Über
+                            uns <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar4"
+                            class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero section start here  -->
+    <section class="bg-no-repeat bg-cover bg-center bg-[url(../img/hero.png)]">
+        <div class="container mx-auto px-5 py-5 lg:px-10 min-h-[90vh] flex items-center">
+            <div class="bg-[#F7F7F7] p-8 rounded-md lg:rounded-2xl max-w-[446px]">
+                <h1 class="text-[#942642] text-2xl lg:text-4xl font-bold">
+                    Morbi tristique sene
+                    et netus et malesuada.
+                </h1>
+                <p class="text-[#676767] pt-2 pb-6">
+                    Sagittis orci a scelerisque purus semper eget duis. Facilisi morbi tempus iaculis urna id volpat
+                    lacus laoreet. Amet
+                    consectetur adipiscing elit duis tristique.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <!-- single item  -->
+                    <div class="hero-single-item flex items-center p-3 gap-x-3">
+                        <span class="w-10">
+                            <img src="img/i1.png" class="w-full" alt="Item">
+                        </span>
+                        <div class="flex-1 flex justify-around items-end gap-x-1">
+                            <span class="text-[#942642] font-semibold flex-1">Umzug &
+                                Reinigung</span>
+                            <span class="w-[6px]">
+                                <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- single item  -->
+                    <div class="hero-single-item flex items-center p-3 gap-x-3">
+                        <span class="w-10">
+                            <img src="img/i2.png" class="w-full" alt="Item">
+                        </span>
+                        <div class="flex-1 flex justify-around items-end gap-x-1">
+                            <span class="text-[#942642] font-semibold w-full lg:w-5">Nur
+                                Umzug</span>
+                            <span class="w-[6px]">
+                                <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- single item  -->
+                    <div class="hero-single-item flex items-center p-3 gap-x-3">
+                        <span class="w-10">
+                            <img src="img/i3.png" class="w-full" alt="Item">
+                        </span>
+                        <div class="flex-1 flex justify-around items-end gap-x-1">
+                            <span class="text-[#942642] font-semibold flex-1">Nur
+                                Reinigung</span>
+                            <span class="w-[6px]">
+                                <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- single item  -->
+                    <div class="hero-single-item flex items-center p-3 gap-x-3">
+                        <span class="w-8">
+                            <img src="img/i4.png" class="w-full" alt="Item">
+                        </span>
+                        <div class="flex-1 flex justify-around items-end gap-x-1">
+                            <span class="text-[#942642] font-semibold flex-1">Umzugskisten</span>
+                            <span class="w-[6px]">
+                                <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- single item  -->
+                    <div class="hero-single-item flex items-center p-3 gap-x-3">
+                        <span class="w-8">
+                            <img src="img/i5.png" class="w-full" alt="Item">
+                        </span>
+                        <div class="flex-1 flex justify-around items-end gap-x-1">
+                            <span class="text-[#942642] font-semibold flex-1">Büroumzug</span>
+                            <span class="w-[6px]">
+                                <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- single item  -->
+                    <div class="hero-single-item flex items-center p-3 gap-x-3">
+                        <span class="w-8">
+                            <img src="img/i6.png" class="w-full" alt="Item">
+                        </span>
+                        <div class="flex-1 flex justify-around items-end gap-x-1">
+                            <span class="text-[#942642] font-semibold flex-1">Klavier-transport</span>
+                            <span class="w-[6px]">
+                                <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- map start here  -->
+    <footer class="">
+        <div class="container mx-auto px-5 py-5 lg:px-10">
+            <h2 class="text-[#942642] text-2xl lg:text-3xl font-semibold">Find us.</h2>
+            <p class="text-[#676767] pt-3 max-w-[450px]">Eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+                Dignissim cras tincidunt lobortis feugiat. Ipsum dolor
+                sit amet consectetur adipiscing elit.</p>
+        </div>
+        <div id="map"></div>
+
+    </footer>
+
+
+    <!-- bot on left bottom  -->
+    <div class="fixed bottom-5 right-3">
+        <img src="img/bot.png" alt="Bot">
+    </div>
+
+    <!-- bottom bar  -->
+     <div class="lg:w-[910px] xl:w-[1180px] 2xl:w-[1280px] hidden mx-auto bottom-bar bg-white shadow-lg min-h-16 lg:flex items-center justify-between rounded-[50px] p-2 cursor-pointer hover:bg-[#942642]">
+        <div class="w-12 h-12 rounded-[50%] bg-[#942642] flex items-center justify-center" id="ques">
+            <div class="border-2 border-[#ffcc00] p-1 text-[#ffcc00] rounded-[50%] flex items-center justify-center w-7 h-7 font-semibold" id="innerQues">?</div>
+        </div>
+        <h3 class="text-xl font-semibold text-[#942642]">Morbi tristique senectus et netus et malesuada?</h3>
+        <button class="bg-[#942642] text-[#ffcc00] rounded-[50px] flex items-center justify-center  w-60 h-12">Ask for a quote</button>
+     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script>
+        // Initialize the map
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: { lat: 46.8182, lng: 8.2275 },
+                styles: [
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{ "color": "#444444" }]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{ "color": "#f2f2f2" }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [{ "saturation": -100 }, { "lightness": 45 }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "simplified" }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }]
+                    }
+                ]
+            });
+
+            // Define marker data
+            var locations = [
+                { name: "Zürich", lat: 47.3769, lng: 8.5417 },
+                { name: "Winterthur", lat: 47.499, lng: 8.7241 },
+                { name: "Baden", lat: 47.473, lng: 8.3059 },
+                { name: "Bern", lat: 46.948, lng: 7.4474 },
+                { name: "Basel", lat: 47.5596, lng: 7.5886 },
+                { name: "Zug", lat: 47.1724, lng: 8.5174 },
+                { name: "Luzern", lat: 47.0502, lng: 8.3093 }
+            ];
+
+            // Add markers to the map
+            var markers = [];
+            locations.forEach(function (location) {
+                var marker = new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map: map,
+                    title: location.name
+                });
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: location.name
+                });
+
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+
+                markers.push(marker);
+            });
+
+            // Create a custom control to display locations
+            var infoDiv = document.createElement('div');
+            infoDiv.classList.add('info');
+            infoDiv.innerHTML = '<ul>' +
+                locations.map(function (location, index) {
+                    return `<li class='flex items-center gap-x-1' onclick="goToLocation(${index})"><span><img src="img/mark.png" alt="mark"></span>${location.name}</li>`;
+
+                }).join('') +
+                '</ul>';
+            map.controls[google.maps.ControlPosition.TOP_RIGHT].push(infoDiv);
+
+            // Function to go to location when list item is clicked
+            window.goToLocation = function (index) {
+                var location = locations[index];
+                map.setCenter({ lat: location.lat, lng: location.lng });
+                map.setZoom(10);
+                google.maps.event.trigger(markers[index], 'click');
+            };
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBooCU6IjjMVFjbYRCC87fzvY6znqStHX8&callback=initMap"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const bottomBar = document.querySelector('.bottom-bar');
+
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 80) {
+                        bottomBar.classList.add('visible');
+                    } else {
+                        bottomBar.classList.remove('visible');
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
