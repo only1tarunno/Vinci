@@ -1,3 +1,6 @@
+.hero{
+    background-image: url(../img/hero.png);
+}
 .hero-single-item {
     border-radius: 4px;
     background: var(--rgb-255255255, #FFF);
